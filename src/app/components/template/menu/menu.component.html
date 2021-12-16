@@ -1,0 +1,70 @@
+<div>
+    <button mat-button routerLink="">
+        <i class="material-icons">home</i>
+        Início
+    </button>
+</div>
+<div>
+    <button mat-button [matMenuTriggerFor]="manutencao">
+        <i class="material-icons">settings_applications</i>
+        Manutenção
+    </button>
+</div>
+<div>
+    <button mat-button [matMenuTriggerFor]="financeiro">
+        <i class="material-icons">request_quote</i>
+        Financeiro
+    </button>
+</div>
+<div>
+    <button mat-button routerLink="">
+        <i class="material-icons">event</i>
+        Agenda
+    </button>
+</div>
+
+<mat-menu #manutencao="matMenu">
+    <button mat-menu-item routerLink="clientes">
+            <i class="material-icons">diamond</i>
+            Cadastro de Clientes
+    </button>
+    <button mat-menu-item routerLink="servicos">
+            <i class="material-icons">content_cut</i>
+            Serviços Habilitados
+    </button>
+    <button mat-menu-item routerLink="produtos">
+            <i class="material-icons">local_grocery_store</i>
+            Cadastro de Produtos
+    </button>
+    <button mat-menu-item routerLink="catprofissional">
+            <i class="material-icons">badge</i>
+            Profissionais do Salão
+    </button>
+    <button mat-menu-item routerLink="catlancamento">
+            <i class="material-icons">request_quote</i>
+            Pagamento/Recebimento
+    </button>
+</mat-menu>
+
+<mat-menu #financeiro="matMenu">
+    <button mat-menu-item>
+        <i class="material-icons">request_quote</i>
+        Conta-Corrente
+    </button>
+    <button mat-menu-item>
+        <i class="material-icons">request_quote</i>
+        Vendas
+    </button>
+    <button mat-menu-item>
+        <i class="material-icons">request_quote</i>
+        Estoque
+    </button>
+    <button mat-menu-item>
+        <i class="material-icons">request_quote</i>
+        Contas a Pagar
+    </button>
+    <button mat-menu-item>
+        <i class="material-icons">request_quote</i>
+        Contas a Receber
+    </button>
+</mat-menu>

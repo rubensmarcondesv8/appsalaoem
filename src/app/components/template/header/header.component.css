@@ -1,0 +1,23 @@
+img{
+    height: 3rem;
+    margin: auto;
+}
+
+.header{
+    background-color:#68312c;
+    color: #cccccc;
+    height: 7%;
+    padding: 0;
+}
+
+.logo-salao{
+    display: flex;
+    background-color: #ffffff;
+    width: 12.5%;
+    height: 100%;
+}
+
+.header-content{
+    display: flex;
+    background-color: #68312c;
+}
